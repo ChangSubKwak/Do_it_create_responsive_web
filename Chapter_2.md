@@ -127,31 +127,31 @@
 }
 
 #wrap {
-width: 90%;
-height: 500px;
-margin: 0 auto;
-border: 4px solid #000;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 4px solid #000;
 }
 
 #wrap div {
-width: 31.25%;  /* 가변박스 적용 : 300 / 960 * 100 = 31.25 */
-display: inline-block;
+  width: 31.25%;  /* 가변박스 적용 : 300 / 960 * 100 = 31.25 */
+  display: inline-block;
 }
 
 /* 첫번째 박스 가변 패딩 적용 */
 #wrap div:first-child {
-/* 가변패딩 적용 : 50 / 960 * 100 = 5.2 */
-/* 두 개로 표현할 때, 상하는 px로 좌우는 %로 표현 가능 */
-padding: 50px 5.2%;
-background: #f00;
+  /* 가변패딩 적용 : 50 / 960 * 100 = 5.2 */
+  /* 두 개로 표현할 때, 상하는 px로 좌우는 %로 표현 가능 */
+  padding: 50px 5.2%;
+  background: #f00;
 }
 
 /* 두번째 박스 가변 패딩 적용 */
 /* + div 는 바로 다음 div를 말함 */
 #wrap div:first-child + div {
-/* 가변패딩 적용 : 130 / 960 * 100 = 13.5*/
-padding: 130px 13.551%;
-background: #0f0;
+  /* 가변패딩 적용 : 130 / 960 * 100 = 13.5*/
+  padding: 130px 13.551%;
+  background: #0f0;
 }
 </style>
 </head>
@@ -190,23 +190,23 @@ font-size: 6em;
 }
 
 #para p{
-/* 64 / 96 = 0.67*/
-/* font-size: 4em; --> 이렇게 하면 안되는 이뉴는 #para에 감싸여 있기 때문 */
-font-size:0.67em;
+  /* 64 / 96 = 0.67*/
+  /* font-size: 4em; --> 이렇게 하면 안되는 이뉴는 #para에 감싸여 있기 때문 */
+  font-size:0.67em;
 }
 
 /* 아래와 같이 #para에 포함되지 않으면 4em으로 하면 '#para p' 와 같은 크기로 표현됨 */
 #para2 {
-font-size: 4em;
+  font-size: 4em;
 }
 
 </style>
 </head>
 <body>
-	<div id="para">
-	가변적인 폰트1
-		<p>가변적인 폰트2</p>
-	</div>
+  <div id="para">
+  가변적인 폰트1
+	<p>가변적인 폰트2</p>
+  </div>
   <div id="para2">가변적인 폰트3</div>
 </body>
 </html>
@@ -241,14 +241,14 @@ font-size: 4em;
 }
 
 p {
-font-size: 5vw;
+  font-size: 5vw;
 }
 </style>
 </head>
 <body>
   <!-- 웹브라우져의 크기를 변경함에 따라 폰트의 크기가 변경됨 -->
   <!-- 이는 이전의 em단위로 글자의 크기를 세팅후, 웹브라우져의 크기를 변경하였을 경우는 폰트의 크기가 그대로임 -->
-	<p>vw단위!</p>
+  <p>vw단위!</p>
 </body>
 </html>
 
@@ -267,24 +267,24 @@ font-size: 5vw;
 }
 
 video, iframe {
-width: 100%;
-max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* 동영상을 가변적으로 만들기 위한 공식같은 느낌 */
 #wrap {
-position: relative;
-padding-bottom: 56.25%;    /* 9 ÷ 16 */
-/* 상/하 퍼센트 패딩은 부모 요소의 높이가 아닌 너빗값을 기준으로 함(스펙명시) */
-height: 0;
-overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;    /* 9 ÷ 16 */
+  /* 상/하 퍼센트 패딩은 부모 요소의 높이가 아닌 너빗값을 기준으로 함(스펙명시) */
+  height: 0;
+  overflow: hidden;
 }
 
 iframe {
-position: absolute;
-top: 0;
-left: 0;
-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 </style>
 </head>
@@ -309,8 +309,8 @@ height: 100%;
 }
 
 video, iframe {
-width:100%;
-max-width:100%;
+  width:100%;
+  max-width:100%;
 }
 </style>
 </head>
